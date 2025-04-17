@@ -1,0 +1,193 @@
+#covers {
+  position: relative;
+  width: 100%;
+  padding-top: 54px;
+  overflow: hidden;
+}
+.visually-hidden-covers {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.covers-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url('../img/covers/elements_vectors.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+}
+@media only screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .covers-wrapper-outer {
+    background-image: url('../img/covers/elements_vectors@2x.png');
+  }
+}
+.visible-area {
+  height: 508px;
+  overflow: hidden;
+  position: relative;
+}
+
+.covers-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  transform: rotate(16deg);
+  transform-origin: top center;
+}
+.covers-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: calc((5 * 162.94px) + (4 * 12px));
+  transform: translateY(-250px);
+  overflow: visible;
+}
+
+@media only screen and (min-width: 768px) {
+  #covers {
+    padding-top: 96px;
+  }
+  .visible-area {
+    height: 960px;
+  }
+  .covers-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: calc((5 * 314px) + (4 * 16px));
+    transition: transform 0.3s ease;
+    transform: translateY(-337px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #covers {
+    padding-top: 164px;
+  }
+}
+
+.covers-first-box,
+.covers-second-box,
+.covers-third-box,
+.covers-fourth-box,
+.covers-fifth-box {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.covers-list-wrapper {
+  width: 200%;
+  display: flex;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .covers-first-box,
+  .covers-second-box,
+  .covers-third-box,
+  .covers-fourth-box,
+  .covers-fifth-box {
+    height: 162.94px;
+  }
+}
+.covers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  animation: scroll 50s linear infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .covers-first-box,
+  .covers-second-box,
+  .covers-third-box,
+  .covers-fourth-box,
+  .covers-fifth-box {
+    height: 314px;
+  }
+}
+
+#covers.animate .covers-list[aria-hidden='true'] {
+  visibility: visible;
+  left: 100%;
+}
+
+.covers-list[aria-hidden='true'] {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  visibility: hidden;
+  pointer-events: none;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes reverseScroll {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.covers-first-box .covers-list,
+.covers-third-box .covers-list,
+.covers-fifth-box .covers-list {
+  animation: scroll 40s linear infinite;
+}
+
+.covers-second-box .covers-list,
+.covers-fourth-box .covers-list {
+  animation: reverseScroll 40s linear infinite;
+}
+
+.photo-project {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-project {
+  width: 282.29px;
+  height: 162.94px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-project {
+    width: 544px;
+    height: 314px;
+  }
+}
