@@ -1,4 +1,6 @@
-I was responsible for implementing the covers section of the project. This section displays a dynamic, responsive photo gallery of project covers with a continuous diagonal scroll animation.
+👩‍💻 My Contribution
+
+As part of a team project, I built the covers section — a dynamic, responsive photo gallery of project covers with a continuous diagonal scroll animation.
 
 From a technical perspective:
 
@@ -12,4 +14,4 @@ Duplicate gallery elements for seamless infinite scrolling.
 
 Trigger animations using the Intersection Observer API when the section comes into view.
 
-The result is a performant and visually engaging element that enhances the user experience across devices.
+The result is a performant and visually engaging element that enhances device user experience.
