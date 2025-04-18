@@ -13,4 +13,4 @@ Duplicate gallery elements for seamless infinite scrolling.
 
 Trigger animations using the Intersection Observer API when the section comes into view.
 
-The result is a performant and visually engaging element that enhances the user experience across devices
+The result is a performant and visually engaging element that enhances the user experience across devices.
