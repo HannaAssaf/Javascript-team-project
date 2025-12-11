@@ -23,7 +23,7 @@ https://hannaassaf.github.io/Javascript-team-project/
 
 ## 🖼️ Preview
 
-<img src="images/portfolio1.png" width="800" />
+<img src="src/public/images/portfolio1.png" width="800" />
 
 ---
 
@@ -35,7 +35,7 @@ responsive gallery with a smooth diagonal scrolling animation.
 ### What I did
 
 - Built the HTML structure for the gallery with semantic and clean markup.
-- Styled the section using CSS, including responsive layout and the diagonal
+- Styled the section using CSS, including a responsive layout and the diagonal
   scrolling effect.
 - Added support for high-quality images.
 - Wrote JavaScript logic to:
@@ -74,5 +74,5 @@ lightweight and user-friendly.
 ---
 
 <div align="center">
-🧡 *Learning by doing — one project at a time.*
+🧡 *Learning by doing — one team project at a time.*
 </div>
