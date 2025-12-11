@@ -23,7 +23,7 @@ https://hannaassaf.github.io/Javascript-team-project/
 
 ## 🖼️ Preview
 
-<img src="src/public/images/portfolio1.png" width="800" />
+<img src="src/public/images/portfolio1.png" width="850" />
 
 ---
 
